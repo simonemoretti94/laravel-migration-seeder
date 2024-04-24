@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('arrival_station', 30);
             $table->time('departure_time');
             $table->time('arrival_time');
-            $table->tinyInteger('train_code', 20);
-            $table->tinyInteger('coaches', 20);
+            $table->unsignedSmallInteger('train_code');
+            $table->unsignedSmallInteger('coaches');
             $table->boolean('on_schedule');
             $table->boolean('deleted');
             $table->timestamps();
