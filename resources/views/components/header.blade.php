@@ -10,18 +10,22 @@
     <a href="{{route('home')}}"
     class="
     nav-link
-    {{Route::currentRouteName() == 'home' ? 'd-none' : 'active'}}"
+    {{Route::currentRouteName() == 'home' ? 'd-none' : ''}}"
     >Home</a
     >
     <a 
     href="{{route('all')}}"
     class="
     nav-link
-    {{Route::currentRouteName() == 'all' ? 'd-none' : 'active'}}"
+    {{-- {{Route::currentRouteName() == 'all' ? 'd-none' : ''}} --}}
+    {{Route::currentRouteName() == 'all' ? 'a_active' : ''}}
+    "
     >Trains</a>
     <a href="{{route('contacts')}}"
     class="
     nav-link
-    {{Route::currentRouteName() == 'contacts' ? 'd-none' : 'active'}}"
+    {{-- {{Route::currentRouteName() == 'contacts' ? 'd-none' : ''}} --}}
+    {{Route::currentRouteName() == 'contacts' ? 'a_active' : ''}}
+    "
     >Contacts</a>
 </nav>

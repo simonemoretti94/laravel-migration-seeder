@@ -8,10 +8,12 @@ const companySelect = document.getElementById('company_select');
 
 countrySelect.addEventListener('change', function (e) {
     console.log(e.target.value);
-    open(`/country/${e.target.value}`);
+    //open(`/country/${e.target.value}`);
+    window.location.href = `/country/${e.target.value}`;
 });
 
 companySelect.addEventListener('change', function (e) {
     console.log(e.target.value);
-    open(`/company/${e.target.value}`);
+    //open(`/company/${e.target.value}`);
+    window.location.href = `/company/${e.target.value}`;
 });
