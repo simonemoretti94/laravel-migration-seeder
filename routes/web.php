@@ -15,6 +15,6 @@ Route::get('/company' , [PageController::class , 'company'])->name('company');
 
 Route::get('/contacts' , [PageController::class , 'contacts'])->name('contacts');
 
-Route::get('/country/{id}' , [PageController::class , 'countryFilter']);
+Route::get('/country/{id}' , [PageController::class , 'countryFilter'])->name('country');
 
-Route::get('/company/{id}' , [PageController::class , 'companyFilter']);
+Route::get('/company/{id}' , [PageController::class , 'companyFilter'])->name('company');
