@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->string('first_class')->after('coaches');
+            $table->unsignedSmallInteger('second_class')->nullable()->after('coaches');
+            $table->unsignedSmallInteger('first_class')->nullable()->after('coaches');
         });
     }
 
@@ -22,7 +23,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('trains', function (Blueprint $table) {
-            //
+            $table->dropColumn(['first_class' , 'second_class']);
         });
     }
 };
