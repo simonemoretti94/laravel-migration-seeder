@@ -29,6 +29,7 @@
                 <select 
                 class="form-select mt-1"
                 id="country_select">
+                    {{-- <option></option> --}}
                     <option value="italy">Italy</option>
                     <option value="austria">Austria</option>
                     <option value="netherlands">Netherlands</option>
@@ -41,6 +42,7 @@
                 <select
                 class="form-select mt-1"
                 id="company_select">
+                    {{-- <option></option> --}}
                     <option value="trenord">Trenord</option>
                     <option value="mediterranea">Mediterranea</option>
                     <option value="wiener linen">Wiener Linen</option>
