@@ -7,19 +7,19 @@
 <nav
     class="nav justify-content-start  "
 >
-    <a href="#"
+    <a href="{{route('home')}}"
     class="
     nav-link
     {{Route::currentRouteName() == 'home' ? 'd-none' : 'active'}}"
     >Home</a
     >
     <a 
-    href="#"
+    href="{{route('all')}}"
     class="
     nav-link
-    {{Route::currentRouteName() == 'trains' ? 'd-none' : 'active'}}"
+    {{Route::currentRouteName() == 'all' ? 'd-none' : 'active'}}"
     >Trains</a>
-    <a href="#"
+    <a href="{{route('contacts')}}"
     class="
     nav-link
     {{Route::currentRouteName() == 'contacts' ? 'd-none' : 'active'}}"

@@ -15,6 +15,26 @@ class PageController extends Controller
         //dd(Train::all());
         return view('index');
     }
+
+    public function alltrains()
+    {
+        return view('alltrains');
+    }
+
+    public function company()
+    {
+        return view('company');
+    }
+
+    public function country()
+    {
+        return view('country');
+    }
+
+    public function contacts()
+    {
+        return view('contacts');
+    }
 }
 
 //Movie::where('vote', '<=' , 9)->orderBy('vote', 'desc')->limit(4)->get();
