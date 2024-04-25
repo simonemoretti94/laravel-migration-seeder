@@ -24,15 +24,18 @@ return new class extends Migration
             $table->boolean('deleted');
             $table->timestamps();
 
-            //Azienda
-            // Stazione di partenza
-            // Stazione di arrivo
-            // Orario di partenza
-            // Orario di arrivo
-            // Codice Treno
-            // Numero Carrozze
-            // In orario
-            // Cancellato
+            // "id" => 1
+            // "company" => "Trenord"
+            // "departure_station" => "Como"
+            // "arrival_station" => "Milano Centrale"
+            // "departure_time" => "09:40:00"
+            // "arrival_time" => "10:30:00"
+            // "train_code" => 56798
+            // "coaches" => 12
+            // "on_schedule" => 1
+            // "deleted" => 0
+            // "created_at" => "2024-04-25 00:00:00"
+            // "updated_at" => "2024-04-25 00:00:00"
         });
     }
 
