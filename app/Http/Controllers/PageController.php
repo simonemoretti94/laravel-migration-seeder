@@ -20,6 +20,12 @@ class FetchTrains {
     {
         return Train::select('*')->where('company', 'trenord')->get();
     }
+
+    static function companyFilter($id)//:array
+    {
+        $trains = Train::select('*')->where('company', $id)->get();
+        return $trains;
+    }
 }
 
 class PageController extends Controller
@@ -53,7 +59,17 @@ class PageController extends Controller
         $trains = FetchTrains::countryFilter($id);
 
         //dd($trains);
+
         return view('country' , compact('trains'));
+    }
+
+    public function companyFilter($id)
+    {
+        $trains = FetchTrains::companyFilter($id);
+        
+        //dd($trains);
+
+        return view('company', compact('trains'));
     }
 }
 

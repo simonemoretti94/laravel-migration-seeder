@@ -43,8 +43,8 @@
                 id="company_select">
                     <option value="trenord">Trenord</option>
                     <option value="mediterranea">Mediterranea</option>
-                    <option value="wiener_linen">Wiener Linen</option>
-                    <option value="ns_international">NS International</option>
+                    <option value="wiener linen">Wiener Linen</option>
+                    <option value="ns international">NS International</option>
                 </select>
                 </p>
             </div>

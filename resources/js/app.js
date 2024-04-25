@@ -13,5 +13,5 @@ countrySelect.addEventListener('change', function (e) {
 
 companySelect.addEventListener('change', function (e) {
     console.log(e.target.value);
-    open('/company');
+    open(`/company/${e.target.value}`);
 });
