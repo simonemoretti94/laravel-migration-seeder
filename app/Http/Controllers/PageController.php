@@ -8,11 +8,23 @@ use Illuminate\Support\Arr;
 
 use Illuminate\Http\Request;
 
+class FetchTrains {
+    static function country()//:array
+    {
+        //return Train::where('country')->get();
+        return Train::select('country')->get();
+    }
+
+    static function company()//:array
+    {
+        return Train::where('company')->get();
+    }
+}
+
 class PageController extends Controller
 {
     public function index()
     {
-        //dd(Train::all());
         return view('index');
     }
 
@@ -23,12 +35,20 @@ class PageController extends Controller
 
     public function company()
     {
-        return view('company');
+
+        $trains = FetchTrains::company();
+        dd($trains);
+
+        return view('company' , compact('trains'));
     }
 
     public function country()
     {
-        return view('country');
+
+        $trains = FetchTrains::country();
+        dd($trains);
+
+        return view('country' , compact('trains'));
     }
 
     public function contacts()
