@@ -9,15 +9,16 @@ use Illuminate\Support\Arr;
 use Illuminate\Http\Request;
 
 class FetchTrains {
-    static function country()//:array
+
+    static function countryFilter($id)
     {
-        //return Train::where('country')->get();
-        return Train::select('country')->get();
+        $trains = Train::select('*')->where('country', $id)->get();
+        return $trains;
     }
 
     static function company()//:array
     {
-        return Train::where('company')->get();
+        return Train::select('*')->where('company', 'trenord')->get();
     }
 }
 
@@ -42,18 +43,17 @@ class PageController extends Controller
         return view('company' , compact('trains'));
     }
 
-    public function country()
-    {
-
-        $trains = FetchTrains::country();
-        dd($trains);
-
-        return view('country' , compact('trains'));
-    }
-
     public function contacts()
     {
         return view('contacts');
+    }
+
+    public function countryFilter($id)
+    {
+        $trains = FetchTrains::countryFilter($id);
+
+        //dd($trains);
+        return view('country' , compact('trains'));
     }
 }
 
