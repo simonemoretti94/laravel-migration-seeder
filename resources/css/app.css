@@ -19,6 +19,10 @@ header {
             & img#train_logo {
                 height: 50px;
                 width: 100px;
+
+                @media screen and (max-width: 400px) {
+                    width: 80px;
+                }
             }
 
             & h3#title {
@@ -28,8 +32,17 @@ header {
                 font-weight: 400;
                 color: white;
                 transform: skew(-5deg);
-                text-shadow: 2px black;
+                text-shadow: 2px 2px 0 black;
+                filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.479));
                 /* display: inline-block; */
+
+                @media screen and (max-width: 450px) {
+                    font-size: 25px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 15px;
+                }
             }
         }
 
