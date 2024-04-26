@@ -66,6 +66,39 @@ main {
     background-color: #2c2c2c;
 }
 
+/* index style */
+
+#main_container {
+    display: block;
+}
+
+hr#hr_devider {
+    display: none;
+    height: 2px;
+    background: linear-gradient(45deg, black, white, black);
+}
+
+#main_subcontainer_1,
+#main_subcontainer_2 {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+
+    #main_container {
+        display: none;
+    }
+
+    #main_subcontainer_1,
+    #main_subcontainer_2 {
+        display: block;
+    }
+
+    hr#hr_devider {
+        display: block;
+    }
+}
+
 /* country style */
 div#ticket_column {
     background-color: rgba(82, 82, 82, 0.274);

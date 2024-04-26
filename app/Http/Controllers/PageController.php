@@ -22,7 +22,7 @@ class FetchTrains
 
     public static function all()
     {
-        $trains = Train::select('*')->get();
+        $trains = Train::select('*')/*->limit(2)*/ ->get();
 
         return $trains;
     }
