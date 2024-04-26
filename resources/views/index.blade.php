@@ -33,6 +33,7 @@
                         <option value="italy">Italy</option>
                         <option value="austria">Austria</option>
                         <option value="netherlands">Netherlands</option>
+                        <option value="france">France</option>
                     </select>
                     
                     </p>
@@ -43,10 +44,12 @@
                     class="form-select mt-1"
                     id="company_select">
                         {{-- <option></option> --}}
-                        <option value="trenord">Trenord</option>
                         <option value="mediterranea">Mediterranea</option>
+                        <option value="trenord">Trenord</option>
                         <option value="wiener linen">Wiener Linen</option>
                         <option value="ns international">NS International</option>
+                        <option value="SNCF">SNCF</option>
+                        <option value="TGV">TGV</option>
                     </select>
                     </p>
                 </div>
@@ -76,6 +79,7 @@
                         <option value="italy">Italy</option>
                         <option value="austria">Austria</option>
                         <option value="netherlands">Netherlands</option>
+                        <option value="france">France</option>
                     </select>
                     
                     </p>
@@ -106,7 +110,9 @@
                         <option value="trenord">Trenord</option>
                         <option value="mediterranea">Mediterranea</option>
                         <option value="wiener linen">Wiener Linen</option>
-                        <option value="ns international">NS International</option>
+                        <option value="NS international">NS International</option>
+                         <option value="SNCF">SNCF</option>
+                        <option value="TGV">TGV</option>
                     </select>
                     </p>
                 </div>

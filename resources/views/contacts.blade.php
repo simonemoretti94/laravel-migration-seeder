@@ -36,6 +36,7 @@
 
     <h4 class="text-primary">Address:</h4>
 
+    <p>
     Simone Moretti
     1st Floor, Premier House
     Argyle Way
@@ -43,5 +44,6 @@
     SG1 2AD
 
     We hope our customers find this information helpful for sharing their experiences and suggestions with us. Thank you for your request! 🚂📞📧
+    </p>
 </div>
 @endsection
