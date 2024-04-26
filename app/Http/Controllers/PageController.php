@@ -13,14 +13,16 @@ class FetchTrains
         return $trains;
     }
 
-    public static function company()//:array
-    {
-        return Train::select('*')->where('company', 'trenord')->get();
-    }
-
     public static function companyFilter($id)//:array
     {
         $trains = Train::select('*')->where('company', $id)->get();
+
+        return $trains;
+    }
+
+    public static function all()
+    {
+        $trains = Train::select('*')->get();
 
         return $trains;
     }
@@ -35,16 +37,9 @@ class PageController extends Controller
 
     public function alltrains()
     {
-        return view('alltrains');
-    }
+        $trains = FetchTrains::all();
 
-    public function company()
-    {
-
-        $trains = FetchTrains::company();
-        dd($trains);
-
-        return view('company', compact('trains'));
+        return view('alltrains', compact('trains'));
     }
 
     public function contacts()
