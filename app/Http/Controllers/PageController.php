@@ -38,8 +38,9 @@ class PageController extends Controller
     public function alltrains()
     {
         $trains = FetchTrains::all();
+        $id = 'all trains';
 
-        return view('alltrains', compact('trains'));
+        return view('alltrains', compact('trains', 'id'));
     }
 
     public function contacts()
