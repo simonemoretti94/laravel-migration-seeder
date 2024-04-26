@@ -68,6 +68,24 @@ main {
 
 /* index style */
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, rgb(173, 173, 173), rgb(160, 160, 160), rgb(173, 173, 173));
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1cc;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7e7e7e;
+}
+
+
 #main_container {
     display: block;
 }
