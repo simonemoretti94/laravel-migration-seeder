@@ -3,27 +3,25 @@
 namespace App\Http\Controllers;
 
 use App\Models\Train;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Arr;
 
-use Illuminate\Http\Request;
-
-class FetchTrains {
-
-    static function countryFilter($id)
+class FetchTrains
+{
+    public static function countryFilter($id)
     {
         $trains = Train::select('*')->where('country', $id)->get();
+
         return $trains;
     }
 
-    static function company()//:array
+    public static function company()//:array
     {
         return Train::select('*')->where('company', 'trenord')->get();
     }
 
-    static function companyFilter($id)//:array
+    public static function companyFilter($id)//:array
     {
         $trains = Train::select('*')->where('company', $id)->get();
+
         return $trains;
     }
 }
@@ -46,7 +44,7 @@ class PageController extends Controller
         $trains = FetchTrains::company();
         dd($trains);
 
-        return view('company' , compact('trains'));
+        return view('company', compact('trains'));
     }
 
     public function contacts()
@@ -60,16 +58,16 @@ class PageController extends Controller
 
         //dd($trains);
 
-        return view('country' , compact('trains'));
+        return view('country', compact('trains', 'id'));
     }
 
     public function companyFilter($id)
     {
         $trains = FetchTrains::companyFilter($id);
-        
+
         //dd($trains);
 
-        return view('company', compact('trains'));
+        return view('company', compact('trains', 'id'));
     }
 }
 
