@@ -4,10 +4,10 @@
 
 @section('content')
     <div class="container" id="country_container">
-    <h2 id="country">{{$id}}</h2>
+    <h2 id="country" class="text-white text-capitalize">{{$id}}</h2>
         <div class="row flex-column" id="country_row">
 @foreach ($trains as $train)
-            <div class="col-12 p-2 text-white d-flex border border-1 rounded-2">
+            <div id="ticket_column" class="col-12 p-2 text-white d-flex border border-1 rounded-2 mt-2">
                 <div class="col-6 d-flex flex-column">
                     <p class="col-12 text-primary">Operated by: <span class="text-white">{{$train['company']}}</span></p>
                     <p class="col-12 text-primary text-smal">

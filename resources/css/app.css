@@ -66,6 +66,11 @@ main {
     background-color: #2c2c2c;
 }
 
+/* country style */
+div#ticket_column {
+    background-color: rgba(82, 82, 82, 0.274);
+}
+
 /* style classes */
 
 .a_active {
