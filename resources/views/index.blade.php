@@ -3,7 +3,7 @@
 @section('title' , 'index')
 
 @section('content')
-<div id="main_container" class="container">
+<div id="index_container" class="container">
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">

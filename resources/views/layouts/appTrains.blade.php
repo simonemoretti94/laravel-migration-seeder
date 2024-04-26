@@ -20,7 +20,7 @@
     <main class="py-2">
 
     {{-- Shared structure --}}
-      <div class="container" id="country_container">
+    <div class="container" id="country_container">
     <h2 id="country" class="text-white text-capitalize">{{$id}}</h2>
         <div class="row flex-column" id="country_row">
         @foreach ($trains as $train)

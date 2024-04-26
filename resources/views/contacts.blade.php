@@ -3,7 +3,7 @@
 @section('title' , 'contacts')
 
 @section('content')
-<div class="container text-white">
+<div id="contacts_container" class="container text-white">
     <h1 class=" text-center text-primary">Contact Us</h1>
     <h6 class="text-primary">Feedback and Contact</h6>
     <p>

@@ -10,7 +10,7 @@
             <li class="text-white text-capitalize col-sm-4">lorem1</li>
         </ul>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">Eccolo</div>
-        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">Eccolo</div>
+        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">lorem</div>
+        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">lorem</div>
     </div>
 </div>
