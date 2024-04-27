@@ -89,46 +89,37 @@
         <div class="carousel-inner" role="listbox">
             <div id="carousel_item" class="carousel-item active">
                 <img
-                    src="https://th.bing.com/th/id/R.8a42151d4721e2d1a1c31a90f08dfb03?rik=nC2U2dpqcyzHwA&pid=ImgRaw&r=0"
+                    src="https://s.yimg.com/uu/api/res/1.2/aAc7HVnQWVH.xqllcygELg--~B/aD0yMzM4O3c9NDE1NjtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/pa_viral_news_uk_120/fddc3d374c6eb71f6d9b03e2d0a64b12"
                     class="w-100 d-block"
                     alt="First slide"
                 />
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>Company</h3>
+                    <h3>The Company</h3>
                     <p>We look forward for a cleaner and sustainable future</p>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div id="carousel_item" class="carousel-item active">
                 <img
                     src="https://i2-prod.leeds-live.co.uk/news/leeds-news/article15244115.ece/ALTERNATES/s1227b/0_New-train_JPG.jpg"
+                    class="w-100 d-block"
+                    alt="First slide"
                 />
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>Company</h3>
-                    <p>We look forward for a cleaner and sustainable future</p>
+                    <h3>Reliability</h3>
+                    <p>Stay on track receiving updates about your trip</p>
                 </div>
             </div>
-            <div class="carousel-item">
+              <div id="carousel_item" class="carousel-item active">
                 <img
                     src="https://www.timeforkids.com/wp-content/uploads/2020/02/feature-cover_-train-k1.jpg"
-                    alt="Third slide"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                <h3>Company</h3>
-                    <p>We look forward for a cleaner and sustainable future</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img
-                    src="https://tse4.mm.bing.net/th?id=OIF.k54073Es7VZ%2bTeqlGY23XQ&rs=1&pid=ImgDetMain"
                     class="w-100 d-block"
-                    alt="Second slide"
+                    alt="First slide"
                 />
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>Company</h3>
-                    <p>We look forward for a cleaner and sustainable future</p>
+                    <h3>No stress</h3>
+                    <p>Luggages free store, you can enjoy your trip relaxed</p>
                 </div>
             </div>
-        </div>
         <button
             class="carousel-control-prev"
             type="button"
