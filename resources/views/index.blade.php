@@ -63,6 +63,9 @@
 </div>
 
 <div class="container-fluid">
+
+    <h1 class="text-white border border-2 mt-4 text-center bg-dark py-2 rounded-2">Our mission</h1>
+
     <div id="carouselId" class="carousel slide border rounded-1 mt-4" data-bs-ride="carousel" style="heigth: 500px;">
         <ol class="carousel-indicators">
             <li
