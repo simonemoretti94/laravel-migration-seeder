@@ -11,6 +11,9 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
+        {{-- tailwind for pagination --}}
+        {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+
        @vite(['resources/css/app.css' , 'resources/js/app.js'])
     </head>
     <body>
@@ -21,7 +24,7 @@
 
     {{-- Shared structure --}}
     <div class="container" id="country_container">
-    <h2 id="country" class="text-white text-capitalize">{{$id}}</h2>
+        <h2 id="country" class="text-white text-capitalize">{{$id}}</h2>
         <div class="row flex-column" id="country_row">
         @foreach ($trains as $train)
             <div id="train_info_column" class="col-12 p-2 text-white d-flex border border-1 rounded-2 mt-2">
@@ -52,6 +55,11 @@
             </div>
         @endforeach
         </div>
+        {{-- <div class="container mt-2">
+            <div class="row justify-content-center">
+                {{ $trains->links() }} disabled cause produces troubles with bootstrap's classes
+            </div>
+        </div> --}}
     </div>
     {{-- Shared structure --}}
 

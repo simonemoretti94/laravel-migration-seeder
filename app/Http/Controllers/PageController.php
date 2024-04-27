@@ -8,21 +8,21 @@ class FetchTrains
 {
     public static function countryFilter($id)
     {
-        $trains = Train::select('*')->where('country', $id)->get();
+        $trains = Train::select('*')->where('country', $id)/*->paginate(3)*/ ->get();
 
         return $trains;
     }
 
     public static function companyFilter($id)//:array
     {
-        $trains = Train::select('*')->where('company', $id)->get();
+        $trains = Train::select('*')->where('company', $id)/*->paginate(3)*/ ->get();
 
         return $trains;
     }
 
     public static function all()
     {
-        $trains = Train::select('*')/*->limit(2)*/ ->get();
+        $trains = Train::select('*')/*->limit(2)->paginate(3)*/ ->get();
 
         return $trains;
     }

@@ -62,7 +62,7 @@
     </div>  
 </div>
 
-<div class="container-fluid">
+<div class="container">
 
     <h1 class="text-white border border-2 mt-4 text-center bg-dark py-2 rounded-2">Our mission</h1>
 
@@ -121,7 +121,7 @@
                 </div>
             </div>
         <button
-            class="carousel-control-prev"
+            class="carousel-control-prev btn_carousel_bg"
             type="button"
             data-bs-target="#carouselId"
             data-bs-slide="prev"
