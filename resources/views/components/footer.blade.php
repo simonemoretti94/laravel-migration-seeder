@@ -148,9 +148,9 @@
          class="text-center p-3"
          style="background-color: rgba(0, 0, 0, 0.2)"
          >
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/"
-         >MDBootstrap.com</a
+      © 2024 Copyright:
+      <a class="text-white" href="https://github.com/simonemoretti94/laravel-migration-seeder"
+         >laravel-migration-seeder</a
         >
     </div>
     <!-- Copyright -->
