@@ -136,6 +136,39 @@ div#ticket_column {
     background-color: rgba(82, 82, 82, 0.274);
 }
 
+/* train info style */
+div#train_info_left {
+    justify-content: space-evenly;
+
+    @media screen and (max-width: 450px) {
+        justify-content: center;
+    }
+}
+
+p#train_departure_arrival {
+    display: block;
+
+
+    @media screen and (max-width: 500px) {
+        display: none;
+        font-size: small;
+    }
+
+    @media screen and (min-width: 550px) and (max-width: 600px) {
+        font-size: medium;
+    }
+
+
+}
+
+span#span_departure_arrival {
+    display: none;
+
+    @media screen and (max-width: 500px) {
+        display: block;
+    }
+}
+
 /* style classes */
 
 .a_active {
