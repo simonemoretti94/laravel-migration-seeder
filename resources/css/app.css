@@ -99,9 +99,15 @@ div#contacts_container {
     background: #7e7e7e;
 }
 
-
-#main_container {
+/* #main_container {
     display: block;
+} */
+
+div#carousel_item {
+    >img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 hr#hr_devider {

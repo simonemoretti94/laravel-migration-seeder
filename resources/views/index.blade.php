@@ -3,6 +3,7 @@
 @section('title' , 'index')
 
 @section('content')
+
 <div id="index_container" class="container">
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
@@ -61,69 +62,89 @@
     </div>  
 </div>
 
-{{-- <h1 class="text-primary">sub container media lesser than 450px</h1> --}}
-
-<div id="main_subcontainer_1" class="container col-12 col-md-12 col-xl-6 col-xxl-6 mt-2">
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
-            >
-                <div class="accordion-body">
-                    <p>Filter by country
-                    <select 
-                    class="form-select mt-1"
-                    id="country_select_2">
-                        {{-- <option></option> --}}
-                        <option value=`null`></option>
-                        <option value="italy">Italy</option>
-                        <option value="austria">Austria</option>
-                        <option value="netherlands">Netherlands</option>
-                        <option value="france">France</option>
-                    </select>
-                    
-                    </p>
+<div class="container-fluid">
+    <div id="carouselId" class="carousel slide border rounded-1 mt-4" data-bs-ride="carousel" style="heigth: 500px;">
+        <ol class="carousel-indicators">
+            <li
+                data-bs-target="#carouselId"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="First slide"
+            ></li>
+            <li
+                data-bs-target="#carouselId"
+                data-bs-slide-to="1"
+                aria-label="Second slide"
+            ></li>
+            <li
+                data-bs-target="#carouselId"
+                data-bs-slide-to="2"
+                aria-label="Third slide"
+            ></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div id="carousel_item" class="carousel-item active">
+                <img
+                    src="https://th.bing.com/th/id/R.8a42151d4721e2d1a1c31a90f08dfb03?rik=nC2U2dpqcyzHwA&pid=ImgRaw&r=0"
+                    class="w-100 d-block"
+                    alt="First slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Company</h3>
+                    <p>We look forward for a cleaner and sustainable future</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="https://i2-prod.leeds-live.co.uk/news/leeds-news/article15244115.ece/ALTERNATES/s1227b/0_New-train_JPG.jpg"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Company</h3>
+                    <p>We look forward for a cleaner and sustainable future</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="https://www.timeforkids.com/wp-content/uploads/2020/02/feature-cover_-train-k1.jpg"
+                    alt="Third slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                <h3>Company</h3>
+                    <p>We look forward for a cleaner and sustainable future</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img
+                    src="https://tse4.mm.bing.net/th?id=OIF.k54073Es7VZ%2bTeqlGY23XQ&rs=1&pid=ImgDetMain"
+                    class="w-100 d-block"
+                    alt="Second slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Company</h3>
+                    <p>We look forward for a cleaner and sustainable future</p>
                 </div>
             </div>
         </div>
-        
-    </div>  
-</div>
-
-<hr id="hr_devider">
-
-<div id="main_subcontainer_2" class="container col-12 col-md-12 col-xl-6 col-xxl-6 mt-2">
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
-            >
-                <div class="accordion-body">
-                    <p>Filter by company
-                    <select
-                    class="form-select mt-1"
-                    id="company_select_2">
-                        {{-- <option></option> --}}
-                        <option value=`null`></option>
-                        <option value="trenord">Trenord</option>
-                        <option value="mediterranea">Mediterranea</option>
-                        <option value="wiener linen">Wiener Linen</option>
-                        <option value="NS international">NS International</option>
-                        <option value="SNCF">SNCF</option>
-                        <option value="TGV">TGV</option>
-                    </select>
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-    </div>  
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="prev"
+        >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="next"
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </div>
 
 @endsection
