@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="icon" type="images/x-icon" href="{{Vite::asset('resources/img/favicon_index.svg')}}" />
 
         <title>@yield('title' , 'app')</title>
 
