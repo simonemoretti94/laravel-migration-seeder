@@ -99,6 +99,12 @@ div#contacts_container {
     background: #7e7e7e;
 }
 
+.lugrasimo-regular {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
