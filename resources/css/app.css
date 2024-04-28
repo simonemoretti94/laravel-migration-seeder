@@ -145,8 +145,13 @@ hr#hr_devider {
 } */
 
 /* country style */
-.bg_info_column {
+.bg_on_schedule {
     background-color: rgba(82, 82, 82, 0.274);
+}
+
+
+.bg_not_on_schedule {
+    background-color: #ffc107d2;
 }
 
 /* train info style */
