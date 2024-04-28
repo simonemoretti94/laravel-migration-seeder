@@ -145,7 +145,7 @@ hr#hr_devider {
 } */
 
 /* country style */
-div#ticket_column {
+.bg_info_column {
     background-color: rgba(82, 82, 82, 0.274);
 }
 

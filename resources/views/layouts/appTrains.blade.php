@@ -27,7 +27,8 @@
         <h2 id="country" class="text-white text-capitalize">{{$id}}</h2>
         <div class="row flex-column" id="country_row">
         @foreach ($trains as $train)
-            <div id="train_info_column" class="col-12 p-2 text-white d-flex border border-1 rounded-2 mt-2">
+            <h6 class="{{!$train['on_schedule'] ? 'mt-2' : 'd-none'}} text-white pt-1" style="border-top: solid 1px white; width: auto;">Not on schedule</h6>
+            <div id="train_info_column" class="col-12 p-2 text-white d-flex border border-1 rounded-2  {{$train['on_schedule'] ? 'bg_info_column mt-2' : 'bg-warning'}}">
 
             {{-- open train info left side --}}
                 <div id="train_info_left" class="col-6 d-flex flex-column">
