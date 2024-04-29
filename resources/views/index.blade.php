@@ -32,6 +32,8 @@
                         id="country_select">
                             {{-- <option></option> --}}
                             <option value=`null`></option>
+                            <option value="belgium">Belgium</option>
+                            <option value="spain">Spain</option>
                             <option value="italy">Italy</option>
                             <option value="austria">Austria</option>
                             <option value="netherlands">Netherlands</option>
@@ -47,10 +49,13 @@
                         id="company_select">
                             {{-- <option></option> --}}
                             <option value=`null`></option>
+                            <option value="SNCB">SNCB</option>
+                            <option value="ns international">NS International</option>
+                            <option value="renfe">Renfe</option>
+                            <option value="elipsos">Elipsos</option>
                             <option value="mediterranea">Mediterranea</option>
                             <option value="trenord">Trenord</option>
                             <option value="wiener linen">Wiener Linen</option>
-                            <option value="ns international">NS International</option>
                             <option value="SNCF">SNCF</option>
                             <option value="TGV">TGV</option>
                         </select>
