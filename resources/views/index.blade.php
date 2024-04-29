@@ -32,12 +32,12 @@
                         id="country_select">
                             {{-- <option></option> --}}
                             <option value=`null`></option>
-                            <option value="belgium">Belgium</option>
-                            <option value="spain">Spain</option>
-                            <option value="italy">Italy</option>
                             <option value="austria">Austria</option>
-                            <option value="netherlands">Netherlands</option>
+                            <option value="belgium">Belgium</option>
                             <option value="france">France</option>
+                            <option value="italy">Italy</option>
+                            <option value="netherlands">Netherlands</option>
+                            <option value="spain">Spain</option>
                         </select>
                         
                         </p>
@@ -45,19 +45,20 @@
                     <div class="accordion-body col-12">
                         <p>Filter by company
                         <select
-                        class="form-select mt-1"
-                        id="company_select">
+                        class="form-select mt-1 overflow-y-scroll"
+                        id="company_select"
+                        >
                             {{-- <option></option> --}}
                             <option value=`null`></option>
-                            <option value="SNCB">SNCB</option>
-                            <option value="ns international">NS International</option>
-                            <option value="renfe">Renfe</option>
                             <option value="elipsos">Elipsos</option>
+                            <option value="renfe">Renfe</option>
+                            <option value="ns international">NS International</option>
                             <option value="mediterranea">Mediterranea</option>
-                            <option value="trenord">Trenord</option>
-                            <option value="wiener linen">Wiener Linen</option>
+                            <option value="SNCB">SNCB</option>
                             <option value="SNCF">SNCF</option>
                             <option value="TGV">TGV</option>
+                            <option value="trenord">Trenord</option>
+                            <option value="wiener linen">Wiener Linen</option>
                         </select>
                         </p>
                     </div>
